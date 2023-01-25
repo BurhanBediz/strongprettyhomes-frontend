@@ -1,0 +1,97 @@
+.property-details{
+    height:50vh;
+    width:50vw;
+}
+
+.property-details div[class^="col"]:first-child{
+    position: relative;
+    text-align: right;
+}
+.property-details div[class^="col"]:first-child img{
+    border-radius: 2rem;
+}
+
+.property-details .price{
+    background-color: var(--color1);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top:10px;
+    left: 16%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 7px gray;
+    display: column;
+    align-items: center;
+    gap:0.3rem;
+
+    
+}
+.property-details .like{
+ 
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    position: absolute;
+    top:18rem;
+    left: 75%;
+    transform: translateX(-50%);
+   
+    display: column;
+    align-items: center;
+    gap:0.3rem;
+
+}
+@media(max-width: 1000px){
+    .property-details .like{
+        left: 68%;
+    }
+} 
+@media(max-width: 530px){
+    .property-details .like{
+        left: 64%;
+    }
+} 
+.property-details .like svg:hover{
+    color: var(--color1);
+
+}
+
+
+
+.property-details div[class^="col"]:nth-child(2){
+    padding-left: 5rem;
+    
+}
+.property-details div[class^="row"]:nth-child(2)  span svg{
+    color: var(--color1);
+ }
+
+ .simge span{
+    font-size:1.1rem!important;
+align-items: center;
+text-align: center;
+margin-left: 2.5rem;
+padding:0;
+ }
+
+ @media(max-width: 1000px){
+    .simge span{
+        font-size:0.9rem!important;
+        margin-left: 1rem;
+    }
+}  
+@media(max-width: 540px){
+    .simge span{
+        font-size:0.8rem!important;
+        margin-left: 1rem;
+    }
+}  
+
+.img-fluid{
+        max-width: 100px;
+      margin: auto;
+      /* border: 3px solid #73AD21; */
+    }
